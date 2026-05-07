@@ -35,7 +35,14 @@ customer-purchase-analysis/
 |   `-- 01_customer_purchase_analysis.ipynb
 |-- outputs/
 |   |-- figures/
+|   |   |-- monthly_revenue.png
+|   |   |-- revenue_by_country.png
+|   |   |-- top_products.png
+|   |   |-- customer_segments_log_monetary.png
+|   |   `-- kmeans_elbow.png
 |   `-- reports/
+|       |-- segment_summary.csv
+|       `-- model_results.csv
 |-- src/
 |   |-- __init__.py
 |   |-- analysis.py
@@ -104,6 +111,12 @@ The log-scale version makes customer segments easier to compare because a few ve
 
 ## Customer Segments
 
+The segment summary is also exported as a CSV report:
+
+```text
+outputs/reports/segment_summary.csv
+```
+
 | Segment | Customers | Avg Recency | Avg Frequency | Avg Monetary | Avg Order Value |
 |---|---:|---:|---:|---:|---:|
 | High Value | 13 | 7.38 | 82.54 | 127,338.31 | 8,570.73 |
@@ -127,6 +140,12 @@ Evaluation includes:
 - recall,
 - F1-score,
 - confusion matrix.
+
+The model metrics are exported as:
+
+```text
+outputs/reports/model_results.csv
+```
 
 ## How To Run
 

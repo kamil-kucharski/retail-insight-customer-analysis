@@ -1,0 +1,5 @@
+Segment,Customers,AvgRecency,AvgFrequency,AvgMonetary,AvgOrderValue
+High Value,13,7.38,82.54,127338.31,8570.73
+Loyal,204,15.5,22.33,12709.09,1080.41
+Occasional,3054,43.7,3.68,1359.05,376.76
+At Risk,1067,248.08,1.55,480.62,314.81
