@@ -1,3 +1,4 @@
+import numpy as np
 import pandas as pd
 
 
@@ -44,4 +45,4 @@ def order_summary(transactions: pd.DataFrame) -> pd.DataFrame:
 
 def returning_customer_share(transactions: pd.DataFrame) -> float:
     orders_per_customer = transactions.groupby("CustomerID")["InvoiceNo"].nunique()
-    return (orders_per_customer > 1).mean()
+    return np.mean(orders_per_customer.to_numpy() > 1)
