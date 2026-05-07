@@ -1,4 +1,4 @@
-# RetailInsight: Customer Purchase Analysis
+# Retail Insight: Customer Purchase Analysis
 
 Customer purchase analysis project based on transactional retail data. The goal is to clean and process raw sales records, explore purchasing patterns, segment customers with RFM analysis and KMeans, and build a small baseline classifier for high-value customers.
 
